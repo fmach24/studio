@@ -46,7 +46,7 @@ export default function Home() {
         <div className="container flex h-24 items-center justify-between">
           <div className="flex items-center">
             <Link href="/" className="mr-6 flex items-center space-x-4">
-              <LogoGraphic className="h-16 w-16" />
+              <LogoGraphic className="h-20 w-20" />
               <span className="font-headline font-bold text-lg tracking-wider">
                 C1PH3R
               </span>
@@ -66,7 +66,7 @@ export default function Home() {
           id="hero"
           className="relative flex h-[60dvh] min-h-[400px] w-full items-center justify-center text-center bg-background overflow-hidden"
         >
-          <div className="absolute inset-[-450%] flex items-center justify-center opacity-10">
+          <div className="absolute inset-[-150%] flex items-center justify-center opacity-10">
             <LogoGraphic className="w-full h-full text-foreground" />
           </div>
           <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-background to-transparent" />
