@@ -14,6 +14,7 @@ import { LogoGraphic } from '@/components/icons/logo-graphic';
 import { FacebookIcon } from '@/components/icons/facebook-icon';
 import { LinkedinIcon } from '@/components/icons/linkedin-icon';
 import { AGHLogo } from '@/components/icons/agh-logo';
+import { IETLogo } from '@/components/icons/iet-logo';
 
 const contactDetails = [
   {
@@ -42,18 +43,27 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-dvh bg-background text-foreground">
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-24 items-center">
+        <div className="container flex h-24 items-center justify-between">
           <Link href="/" className="mr-6 flex items-center space-x-4">
             <LogoGraphic className="h-20 w-20" />
             <span className="font-headline font-bold text-2xl tracking-wider">
               C1PH3R
             </span>
           </Link>
-          <nav className="flex items-center space-x-8 text-xl font-medium">
+          <nav className="hidden md:flex items-center space-x-8 text-xl font-medium">
             <Link href="#o-nas">O nas</Link>
             <Link href="#projekty">Projekty</Link>
             <Link href="#zespol">Zespół</Link>
+            <Link href="#kontakt">Kontakt</Link>
           </nav>
+          <Link
+            href="https://iet.agh.edu.pl/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden md:block"
+          >
+            <IETLogo className="h-16 w-16" />
+          </Link>
         </div>
       </header>
 
@@ -157,7 +167,7 @@ export default function Home() {
                         na konferencji SecureTech 2024.
                       </p>
                       <Button asChild className="mt-6">
-                        <Link href="#">Czytaj więcej</Link>
+                        <Link href="#kontakt">Dołącz do nas</Link>
                       </Button>
                     </CardContent>
                   </div>
@@ -218,11 +228,43 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <section id="kontakt" className="py-16 md:py-24 lg:py-32 bg-secondary/50">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                Kontakt
+              </h2>
+              <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                Masz pytania? Chcesz do nas dołączyć? Skontaktuj się z nami!
+              </p>
+            </div>
+            <div className="mt-12 max-w-lg mx-auto">
+              <Card>
+                <CardContent className="p-6">
+                  <ul className="space-y-4">
+                    {contactDetails.map((detail) => (
+                      <li key={detail.value} className="flex items-center gap-4">
+                        <detail.icon className="h-6 w-6 text-primary" />
+                        <Link
+                          href={detail.href}
+                          className="text-lg text-muted-foreground hover:text-foreground"
+                        >
+                          {detail.value}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
       </main>
 
       <footer className="bg-card border-t">
         <div className="container mx-auto px-4 py-8 md:px-6">
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
             <div className="flex flex-col gap-4 items-start">
               <div className="flex items-center gap-3">
                 <div className="bg-white rounded-full p-2 shadow-md">
@@ -236,23 +278,8 @@ export default function Home() {
                 Akademia Górniczo-Hutnicza w Krakowie
               </p>
             </div>
-            <div className="flex flex-col gap-4">
-              <h4 className="font-semibold text-lg">Kontakt</h4>
-              <ul className="space-y-2">
-                {contactDetails.map((detail) => (
-                  <li key={detail.value} className="flex items-center gap-3">
-                    <detail.icon className="h-5 w-5 text-primary" />
-                    <Link
-                      href={detail.href}
-                      className="text-sm text-muted-foreground hover:text-foreground"
-                    >
-                      {detail.value}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="flex flex-col gap-4">
+
+            <div className="flex flex-col gap-4 md:items-end">
               <h4 className="font-semibold text-lg">Znajdź nas</h4>
               <div className="flex items-center gap-4">
                 <Button
