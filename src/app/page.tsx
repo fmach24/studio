@@ -43,12 +43,12 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-dvh bg-background text-foreground">
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-14 items-center">
-          <Link href="/" className="mr-6 flex items-center space-x-2">
-            <LogoGraphic className="h-6 w-6" />
-            <span className="font-bold">C1PH3R</span>
+        <div className="container flex h-16 items-center">
+          <Link href="/" className="mr-6 flex items-center space-x-3">
+            <LogoGraphic className="h-8 w-8" />
+            <span className="font-bold text-xl">C1PH3R</span>
           </Link>
-          <nav className="flex items-center space-x-6 text-sm font-medium">
+          <nav className="flex items-center space-x-6 text-base font-medium">
             <Link href="#o-nas">O nas</Link>
             <Link href="#projekty">Projekty</Link>
             <Link href="#zespol">Zespół</Link>
