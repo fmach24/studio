@@ -45,7 +45,9 @@ export default function Home() {
         <div className="container flex h-24 items-center">
           <Link href="/" className="mr-6 flex items-center space-x-4">
             <LogoGraphic className="h-20 w-20" />
-            <span className="font-headline font-bold text-2xl tracking-wider">C1PH3R</span>
+            <span className="font-headline font-bold text-2xl tracking-wider">
+              C1PH3R
+            </span>
           </Link>
           <nav className="flex items-center space-x-8 text-xl font-medium">
             <Link href="#o-nas">O nas</Link>
@@ -60,12 +62,14 @@ export default function Home() {
           id="hero"
           className="relative flex h-[60dvh] min-h-[400px] w-full items-center justify-center text-center bg-background overflow-hidden"
         >
-          <div className="absolute inset-[-90%] flex items-center justify-center opacity-10">
+          <div className="absolute inset-[-150%] flex items-center justify-center opacity-10">
             <LogoGraphic className="w-full h-full text-foreground" />
           </div>
+          <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-background to-transparent" />
           <div className="relative z-10 container px-4 md:px-6">
             <h1 className="font-headline text-4xl font-bold tracking-tighter text-foreground sm:text-5xl md:text-6xl lg:text-7xl">
-              Koło Naukowe <span className="text-primary tracking-widest">C1PH3R</span>
+              Koło Naukowe{' '}
+              <span className="text-primary tracking-widest">C1PH3R</span>
             </h1>
             <p className="mx-auto mt-4 max-w-[700px] text-lg text-muted-foreground md:text-xl">
               Zrzeszamy studentów AGH pasjonujących się cyberbezpieczeństwem.
@@ -109,7 +113,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="projekty" className="py-16 md:py-24 lg:py-32 bg-secondary/50">
+        <section
+          id="projekty"
+          className="py-16 md:py-24 lg:py-32 bg-secondary/50"
+        >
           <div className="container mx-auto px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
@@ -197,16 +204,18 @@ export default function Home() {
               ))}
             </div>
             <div className="mt-16 text-center">
-                <h3 className="font-headline text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl">
-                  Opiekun Koła
-                </h3>
-                <p className="mt-4 text-xl font-semibold text-primary">
-                  dr hab. inż. Marcin Niemiec, prof. AGH
-                </p>
-                <p className="mt-2 max-w-2xl mx-auto text-muted-foreground">
-                  Adiunkt w Katedrze Telekomunikacji na Wydziale EAIiIB AGH, odpowiedzialny za rozwój naukowy i wsparcie merytoryczne naszego koła.
-                </p>
-              </div>
+              <h3 className="font-headline text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl">
+                Opiekun Koła
+              </h3>
+              <p className="mt-4 text-xl font-semibold text-primary">
+                dr hab. inż. Marcin Niemiec, prof. AGH
+              </p>
+              <p className="mt-2 max-w-2xl mx-auto text-muted-foreground">
+                Adiunkt w Katedrze Telekomunikacji na Wydziale EAIiIB AGH,
+                odpowiedzialny za rozwój naukowy i wsparcie merytoryczne naszego
+                koła.
+              </p>
+            </div>
           </div>
         </section>
       </main>
@@ -277,13 +286,13 @@ export default function Home() {
                   </Link>
                 </Button>
                 <Link
-                    href="https://www.agh.edu.pl"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group"
-                  >
-                    <AGHLogo className="h-12" />
-                  </Link>
+                  href="https://www.agh.edu.pl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group"
+                >
+                  <AGHLogo className="h-12" />
+                </Link>
               </div>
             </div>
           </div>
