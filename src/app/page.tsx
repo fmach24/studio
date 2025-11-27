@@ -47,7 +47,7 @@ export default function Home() {
           <div className="flex items-center">
             <Link href="/" className="mr-6 flex items-center space-x-4">
               <LogoGraphic className="h-20 w-20" />
-              <span className="font-headline font-bold text-lg tracking-wider">
+              <span className="font-headline font-bold text-2xl tracking-wider">
                 C1PH3R
               </span>
             </Link>
