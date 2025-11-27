@@ -13,8 +13,6 @@ import {
 import { LogoGraphic } from '@/components/icons/logo-graphic';
 import { FacebookIcon } from '@/components/icons/facebook-icon';
 import { LinkedinIcon } from '@/components/icons/linkedin-icon';
-import { AGHLogo } from '@/components/icons/agh-logo';
-import { IETLogo } from '@/components/icons/iet-logo';
 
 const contactDetails = [
   {
@@ -306,22 +304,6 @@ export default function Home() {
                     <FacebookIcon className="h-7 w-7" />
                   </Link>
                 </Button>
-                <Link
-                  href="https://www.agh.edu.pl"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group"
-                >
-                  <AGHLogo className="h-12" />
-                </Link>
-                <Link
-                  href="https://iet.agh.edu.pl/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group"
-                >
-                  <IETLogo className="h-12" />
-                </Link>
               </div>
             </div>
           </div>
