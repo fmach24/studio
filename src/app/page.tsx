@@ -43,11 +43,11 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-dvh bg-background text-foreground">
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-24 items-center">
+        <div className="container flex h-24 items-center justify-between">
           <div className="flex items-center">
             <Link href="/" className="mr-6 flex items-center space-x-4">
-              <LogoGraphic className="h-20 w-20" />
-              <span className="font-headline font-bold text-2xl tracking-wider">
+              <LogoGraphic className="h-16 w-16" />
+              <span className="font-headline font-bold text-xl tracking-wider">
                 C1PH3R
               </span>
             </Link>
@@ -313,6 +313,14 @@ export default function Home() {
                   className="group"
                 >
                   <AGHLogo className="h-12" />
+                </Link>
+                <Link
+                  href="https://iet.agh.edu.pl/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group"
+                >
+                  <IETLogo className="h-12" />
                 </Link>
               </div>
             </div>
