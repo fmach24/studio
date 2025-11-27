@@ -61,7 +61,7 @@ export default function Home() {
           className="relative flex h-[60dvh] min-h-[400px] w-full items-center justify-center text-center bg-background"
         >
           <div className="absolute inset-0 flex items-center justify-center opacity-10">
-            <LogoGraphic className="w-1/2 h-1/2 text-foreground" />
+            <LogoGraphic className="w-3/4 h-3/4 text-foreground" />
           </div>
           <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-background/50 to-background" />
           <div className="relative z-10 container px-4 md:px-6">
