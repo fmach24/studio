@@ -4,11 +4,30 @@ import { Toaster } from '@/components/ui/toaster';
 import { cn } from '@/lib/utils';
 
 export const metadata: Metadata = {
-  title: 'C1PH3R Hub',
-  description: 'Strona internetowa Koła Naukowego Cipher AGH',
+  title: 'C1PH3R',
+  description: 'Koło Naukowe Cipher to grupa studentów AGH pasjonujących się cyberbezpieczeństwem. Zajmujemy się bezpieczeństwem sieciowym, kryptografią, testami penetracyjnymi i analizą zagrożeń.',
+  keywords: ['cyberbezpieczeństwo', 'AGH', 'koło naukowe', 'security', 'pentesting', 'kryptografia', 'Kraków', 'WiET', 'kn', 'cipher', 'c1ph3r'],
+  authors: [{ name: 'Koło Naukowe C1PH3R AGH' }],
+  creator: 'Koło Naukowe C1PH3R AGH',
+  publisher: 'Koło Naukowe C1PH3R AGH',
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'pl_PL',
+    url: 'https://cipher.agh.edu.pl/',
+    siteName: 'C1PH3R - Koło Naukowe Cyberbezpieczeństwa AGH',
+    title: 'C1PH3R - Koło Naukowe Cyberbezpieczeństwa AGH',
+    description: 'Koło Naukowe Cipher to grupa studentów AGH pasjonujących się cyberbezpieczeństwem.',
+  },
   icons: {
     icon: [
-      { url: '/cipher_logo.ico' },
       { url: '/favicon.ico' },
     ],
   },

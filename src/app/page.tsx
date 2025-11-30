@@ -69,7 +69,7 @@ export default function Home() {
           </div>
           <div className="flex items-center gap-3">
             <Link
-              href="https://www.linkedin.com/company/cipher-agh/posts/?feedView=all"
+              href="https://www.linkedin.com/company/cipher-agh/posts"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center h-12 w-12 rounded-md bg-white border-2 border-primary/20 shadow-md text-primary hover:bg-gray-100 transition-colors"
@@ -135,7 +135,7 @@ export default function Home() {
             <Card className="border-2 border-primary/20 bg-card shadow-xl">
               <CardHeader className="items-center text-center">
                 <CardTitle className="font-headline text-3xl md:text-4xl">
-                  Kim Jesteśmy?
+                  O nas
                 </CardTitle>
                 <CardDescription className="max-w-3xl text-base md:text-lg">
                   Koło Naukowe Cipher tworzą studenci AGH zainteresowani pracą
@@ -174,8 +174,8 @@ export default function Home() {
                 <div className="grid md:grid-cols-2 items-start">
                   <div className="relative h-64 md:h-full">
                     <Image
-                      src="/image.png"
-                      alt="Analiza bezpieczeństwa sieci IoT"
+                      src="/milcom.png"
+                      alt="cipher at milcom 2025"
                       fill
                       className="object-cover"
                     />
@@ -183,21 +183,28 @@ export default function Home() {
                   <div className="p-6 md:p-8">
                     <CardHeader>
                       <CardTitle className="font-headline text-2xl">
-                        Analiza bezpieczeństwa sieci IoT
+                        KN C1PH3R at MILCOM 2025!
                       </CardTitle>
-                      <CardDescription>24 maja 2024</CardDescription>
+                      <CardDescription>6-10 november 2025</CardDescription>
                     </CardHeader>
                     <CardContent>
                       <p className="text-muted-foreground">
-                        W ramach tego projektu nasz zespół przeprowadził
-                        kompleksową analizę bezpieczeństwa popularnych urządzeń
-                        Internetu Rzeczy. Zidentyfikowaliśmy kilka krytycznych
-                        podatności i opracowaliśmy zalecenia dotyczące ich
-                        łagodzenia. Wyniki naszych badań zostały zaprezentowane
-                        na konferencji SecureTech 2024.
+                        Members of our KN C1PH3R student organization participated in the prestigious
+                        MILCOM 2025 conference, organized by the IEEE (Institute of Electrical and Electronics
+                        Engineers), which took place from October 6-10 in Los Angeles. [...]
+                        Our members presented a project entitled 
+                        "Application of Post-Quantum Cryptography in IoT Networks," 
+                        authored by Tomasz Styn, Michał Pitera, Mateusz Okoń, Patryk Harasik, and PhD
+                        Marcin Niemiec.
                       </p>
                       <Button asChild className="mt-6">
-                        <Link href="#kontakt">Dołącz do nas</Link>
+                        <Link 
+                        href="https://www.linkedin.com/company/cipher-agh/posts" 
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >
+                          Czytaj więcej
+                        </Link>
                       </Button>
                     </CardContent>
                   </div>
