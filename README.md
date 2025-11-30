@@ -1,10 +1,10 @@
 # C1PH3R - Strona Koła Naukowego AGH
 
-Oficjalna strona internetowa Koła Naukowego Cyberbezpieczeństwa C1PH3R działającego na Akademii Górniczo-Hutniczej w Krakowie.
+Oficjalna strona internetowa Koła Naukowego C1PH3R działającego na WiET w Akademii Górniczo-Hutniczej w Krakowie.
 
 ## 🚀 Technologie
 
-- **Next.js 15.3** - React framework z Server-Side Rendering
+- **Next.js 15.5.6** - React framework z Server-Side Rendering
 - **TypeScript** - Typowanie statyczne
 - **Tailwind CSS** - Utility-first CSS framework
 - **Radix UI** - Komponenty UI z accessibility
