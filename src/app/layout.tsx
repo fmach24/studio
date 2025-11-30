@@ -22,9 +22,9 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'pl_PL',
     url: 'https://cipher.agh.edu.pl/',
-    siteName: 'C1PH3R - Koło Naukowe Cyberbezpieczeństwa AGH',
-    title: 'C1PH3R - Koło Naukowe Cyberbezpieczeństwa AGH',
-    description: 'Koło Naukowe Cipher to grupa studentów AGH pasjonujących się cyberbezpieczeństwem.',
+    siteName: 'C1PH3R',
+    title: 'Koło Naukowe C1PH3R AGH',
+    description: 'Koło Naukowe C1PH3R to grupa studentów AGH pasjonujących się cyberbezpieczeństwem.',
   },
   icons: {
     icon: [
