@@ -2,7 +2,7 @@
 
 Oficjalna strona internetowa Koła Naukowego C1PH3R działającego na WiET w Akademii Górniczo-Hutniczej w Krakowie.
 
-## 🚀 Technologie
+## Technologie
 
 - **Next.js 15.5.6** - React framework z Server-Side Rendering
 - **TypeScript** - Typowanie statyczne
@@ -10,7 +10,7 @@ Oficjalna strona internetowa Koła Naukowego C1PH3R działającego na WiET w Aka
 - **Radix UI** - Komponenty UI z accessibility
 - **Lucide React** - Ikony
 
-## 📦 Instalacja
+## Instalacja
 
 ```bash
 # Instalacja zależności
@@ -20,7 +20,7 @@ npm install
 npm run dev
 ```
 
-## 🏗️ Struktura projektu
+## Struktura projektu
 
 ```
 C1PH3R-website/
